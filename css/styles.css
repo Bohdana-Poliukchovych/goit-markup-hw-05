@@ -606,6 +606,7 @@ a {
     background-color: #fcfcfc;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -619,6 +620,7 @@ a {
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    padding: 0;
     cursor: pointer;
     background-color: #e7e9fc;
     stroke-width: 1px;
@@ -651,12 +653,156 @@ a {
     color: #2e2f42;
     min-width: 360px;
     padding-top: 72px;
+    margin-bottom: 16px;
 }
 
+.form-field-wrapper {
+    margin-bottom: 8px;
+    margin-left: 24px;
+    max-width: 360px;
+}
 
 .label-field {
     display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+    
 }
+
+.field-wrapper {
+    position: relative;
+}
+
+.input-field {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    padding-left: 38px;
+    resize: none;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field:focus {
+    border-color: #4d5ae5;
+    
+}
+
+.field-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill:#2e2f42;
+    transition: fiil 250 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field:focus + .field-icon {
+    fill: #4d5ae5;
+}
+
+.comment-textarea {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.comment-textarea:focus {
+    border-color: #4d5ae5;
+}
+  
+.policy-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-link {
+    line-height: 1.3;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.policy-checkbox:checked+.policy-label>.custom-checkbox {
+    background-color: #404bbf;
+    fill: #f4f4fd;
+}
+
+.form-field-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-send {
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 16px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
