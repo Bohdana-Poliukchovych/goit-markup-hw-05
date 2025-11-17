@@ -492,30 +492,23 @@
         </div>
 
         <div class="form-container">
-          <form>
-            <p class="form-title">Subscribe</p>
+          <p class="form-title">Subscribe</p>
+          <form class="form-footer">
+            <label>
+              <input
+                class="input-form-footer"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
 
-            <div class="form-input-wrapper">
-              <div class="input-wrapper">
-                <label class="in-label-field" for="useremail"></label>
-                <input
-                  class="in-input-field"
-                  type="email"
-                  name="useremail"
-                  id="useremail-footer"
-                  placeholder="E-mail"
-                />
-              </div>
-
-              <div class="button-wrapper">
-                <button class="subscribe-button" type="submit">
-                  Subscribe
-                  <svg class="tg" width="24" height="24">
-                    <use href="./images/icons.svg#icon-tg"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <button class="form-button-footer" type="submit">
+              Subscribe
+              <svg class="icon-button-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-tg"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -530,7 +523,7 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form>
+        <form class="form-modal">
           <div class="form-field-wrapper">
             <label class="label-field" for="user-name">Name</label>
 
