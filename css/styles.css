@@ -654,7 +654,7 @@ a {
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    
 }
 
 .backdrop.is-open {
@@ -675,6 +675,7 @@ a {
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -784,6 +785,12 @@ a {
     fill: #4d5ae5;
 }
 
+.form-field-wr {
+    margin-left: 24px;
+    max-width: 360px;
+    margin-bottom: 16px;
+}
+
 .comment-textarea {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -814,7 +821,7 @@ a {
   
 .form-field-wrap {
     margin-left: 24px;
-        max-width: 360px;
+    max-width: 360px;
     margin-bottom: 24px;
 }
 
