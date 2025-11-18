@@ -727,14 +727,12 @@ a {
     text-align: center;
     color: #2e2f42;
     min-width: 360px;
-    padding-top: 72px;
     margin-bottom: 16px;
 }
 
 
 
 .form-field-wrapper {
-    margin-left: 24px;
     max-width: 360px;
     margin-bottom: 8px;
 }
@@ -786,7 +784,6 @@ a {
 }
 
 .form-field-wr {
-    margin-left: 24px;
     max-width: 360px;
     margin-bottom: 16px;
 }
@@ -820,7 +817,6 @@ a {
 }
   
 .form-field-wrap {
-    margin-left: 24px;
     max-width: 360px;
     margin-bottom: 24px;
 }
@@ -856,22 +852,18 @@ a {
     color: #4d5ae5;
 }
 
-
 .policy-checkbox:checked+.policy-label>.custom-checkbox {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
 }
 
-
-
 .button-send {
     display: block;
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
-    margin-left: 119px;
-    margin-right: 120px;
+    margin:0 auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color:  #4d5ae5;
     cursor: pointer;
